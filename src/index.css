@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Montserrat:wght@400;800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,4 +7,9 @@
   background-image: url("../src/assets/banner.png");
   background-size: cover;
   background-position: center;
+}
+.category-bg {
+  background-image: url("../src/assets/category.png");
+  background-size: cover;
+  background-position: bottom;
 }
