@@ -1,10 +1,9 @@
-import "./App.css";
 import Banner from "./components/Banner";
 
 function App() {
   return (
     <>
-      <div className="">
+      <div>
         <Banner />
       </div>
     </>

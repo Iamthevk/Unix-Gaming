@@ -1,5 +1,7 @@
 import BuyToken from "./BuyToken";
-
+import Partenership from "./Partenership";
+import Form from "./Form";
+import Footer from "./Footer";
 function Ecosystem() {
   return (
     <div className="bg-[#0B0A0A] text-secondary pt-20 relative">
@@ -12,9 +14,10 @@ function Ecosystem() {
           you’re interested in, and we help you find others to share your
           interests.
         </p>
-        <div className="flex justify-between items-center px-20">
+        <div className="flex justify-between items-center px-20 xxl:px-80">
           <div className="relative">
-            <div className="w-[430px] h-[300px] rounded-full bg-primary blur-3xl border-2 opacity-50 absolute top-[400px] left-40 "></div>
+            <div className="w-[430px] h-[300px] rounded-full bg-primary-100 blur-3xl border-2 opacity-50 absolute top-[400px] left-40 "></div>
+
             <img
               src={"man.png"}
               className="w-[700px] h-[700px] object-cover rounded-full backdrop-brightness-100 "
@@ -24,11 +27,9 @@ function Ecosystem() {
         </div>
       </div>
       <BuyToken />
-      <div>
-        <h1 className="text-secondary text-6xl font-extrabold font-montSerrat w-full">
-          Partenerships
-        </h1>
-      </div>
+      <Partenership />
+      <Form />
+      <Footer />
     </div>
   );
 }
