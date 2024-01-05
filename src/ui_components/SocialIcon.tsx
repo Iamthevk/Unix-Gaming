@@ -1,4 +1,9 @@
-function SocialIcon({ src, alt }) {
+interface ISocialProps {
+  src: string;
+  alt: string;
+}
+
+function SocialIcon({ src, alt }: ISocialProps) {
   return (
     <img
       src={src}

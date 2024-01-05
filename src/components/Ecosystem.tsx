@@ -33,18 +33,18 @@ function Ecosystem() {
     setOpenIndex((prevIdx) => (prevIdx === index ? null : index));
   }
   return (
-    <div className="bg-[#0B0A0A] text-secondary-100 pt-20 relative">
+    <div className="bg-[#0B0A0A] text-secondary-100 pt-20 h-auto relative">
       <div className="text-center">
-        <h1 className="text-secondary-100 text-4xl md:text-6xl font-extrabold font-montSerrat mb-5">
+        <h1 className="text-secondary-100 text-3xl md:text-6xl font-extrabold font-montSerrat mb-5">
           The unix ecosystem
         </h1>
-        <p className="font-inter text-2xl w-[60%] mx-auto">
+        <p className="font-inter text-2xl px-2 md:w-[60%] mx-auto">
           wanted is a web3 social app created for discovery. you tell us what
           you’re interested in, and we help you find others to share your
           interests.
         </p>
       </div>
-      <div className="flex justify-between items-center md:px-20 xxl:px-80">
+      <div className="flex flex-col md:flex-row md:justify-between items-center md:px-20 xxl:px-80">
         <div className="relative">
           <div className="md:w-[430px] h-[300px] rounded-full bg-primary-100 blur-3xl border-2 opacity-50 absolute top-[400px] left-40 "></div>
 
@@ -53,7 +53,7 @@ function Ecosystem() {
             className="md:w-[700px] md:h-[700px] object-cover rounded-full backdrop-brightness-100 "
           />
         </div>
-        <div className="w-[50%]">
+        <div className="w-full ml-10 md:ml-0 md:w-[50%]">
           {data.map((item, i) => {
             return (
               <>

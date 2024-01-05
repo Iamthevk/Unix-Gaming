@@ -1,6 +1,6 @@
 function Form() {
   return (
-    <div className="md:h-[600px] border-8 border-primary-100 bg-secondary-200 md:w-[80%] mx-2 md:mx-auto  relative rounded-[40px] px-4 md:px-16 flex flex-col md:flex-row justify-center items-center gap-10">
+    <div className="md:h-[600px] border-8 border-primary-100 bg-secondary-200 md:w-[80%]  mx-2 md:mx-auto  relative rounded-[40px] px-4 md:px-16 flex flex-col md:flex-row justify-center items-center gap-10 xxl:gap-[500px]">
       <div className="py-10 md:py-28 text-left">
         <h1 className="text-secondary-100 text-4xl md:text-6xl font-extrabold font-montSerrat ">
           Get unix gaming updates.
@@ -25,7 +25,11 @@ function Form() {
         </form>
       </div>
       <div className="md:w-full">
-        <img src={"join.png"} alt="join-image" />
+        <img
+          src={"join.png"}
+          alt="join-image"
+          className="w-72 h-72 xxl:w-[450px] xxl:h-[450px]"
+        />
       </div>
     </div>
   );

@@ -19,17 +19,17 @@ function Cards() {
           return (
             <div
               key={item.id}
-              className="border-2 border-[#F204DA] bg-secondary-200  md:w-60 md:h-60 rounded-[20px] flex justify-center items-center flex-col relative"
+              className="border-2 border-[#F204DA] bg-secondary-200 w-40 h-40 md:w-60 md:h-60 rounded-[20px] flex justify-center items-center flex-col relative"
             >
-              <div className="absolute right-10 top-5 bg-gradient-to-r from-[#F204DA] to-primary-100 rounded-md w-16 text-center">
+              <div className="absolute right-10 top-4 md:top-5 bg-gradient-to-r from-[#F204DA] to-primary-100 rounded-md w-16 text-center">
                 {item.count}
               </div>
               <img
                 src={item.image}
                 alt={item.title}
-                className="h-32 w-40 -my-3"
+                className="h-20 w-24 md:h-32 mt-5 md:w-40 md:-my-3"
               />
-              <p className="text-3xl">{item.title}</p>
+              <p className="text-xl md:text-3xl">{item.title}</p>
             </div>
           );
         })}

@@ -6,7 +6,7 @@ import Navbar from "./Navbar";
 function Banner() {
   return (
     <>
-      <div className="banner-bg h-[980px] md:h-[840px] md:w-full pt-12 px-8 md:px-36 relative">
+      <div className="banner-bg h-[840px] md:w-full pt-12 px-8 md:px-36 relative">
         <div className="flex justify-between items-start mb-24">
           <div className="flex gap-2 items-center">
             <span className="h-12 w-12 text-secondary-100 bg-gradient-to-r from-[#F20493] to-primary-100 text-2xl font-bold rounded-full grid place-items-center">
@@ -36,7 +36,7 @@ function Banner() {
             <img
               src={"girl.png"}
               alt="girl using vr"
-              className="w-[580px] h-[580px] "
+              className="md:w-[580px] md:h-[580px] "
             />
           </div>
         </div>

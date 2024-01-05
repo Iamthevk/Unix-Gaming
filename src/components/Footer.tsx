@@ -11,7 +11,7 @@ function Footer() {
           unix gaming
         </p>
       </div>
-      <div className="flex gap-7 py-10">
+      <div className="flex gap-7 xxl:gap-16 py-10">
         <SocialIcon src={"whatsapp.svg"} alt="whatsapp" />
         <SocialIcon src={"instagram.svg"} alt="instagram" />
         <SocialIcon src={"facebook.svg"} alt="facebook" />

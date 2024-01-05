@@ -15,7 +15,7 @@ function Partenership() {
       <h1 className="text-secondary-100 text-4xl md:text-6xl font-extrabold font-montSerrat w-full">
         Partenerships
       </h1>
-      <div className="flex justify-center items-center gap-7 md:px-12 xxl:px-96  flex-wrap py-7">
+      <div className="flex justify-center items-center gap-7 xxl:gap-16 md:px-12 xxl:px-96  flex-wrap py-7">
         {imageSrcList.map((imageSrc, i) => {
           return (
             <div className="w-32 md:w-60 h-24 p-5 border-2 border-primary-200 rounded-3xl flex justify-center items-center bg-secondary-200">

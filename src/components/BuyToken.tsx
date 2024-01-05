@@ -1,9 +1,9 @@
 import Button from "../ui_components/Button";
 function BuyToken() {
   return (
-    <div className="flex justify-between items-center pt-5 md:px-20 xxl:px-80 text-start mb-52">
+    <div className="flex flex-col gap-16 md:gap-0 md:flex-row md:justify-between items-center pt-5 mx-5 md:px-20 xxl:px-80 text-start mb-24 md:mb-52">
       <div>
-        <h1 className="text-secondary-100 text-4xl md:text-6xl font-extrabold font-montSerrat md:w-[80%] -mt-28">
+        <h1 className="text-secondary-100 text-3xl md:text-6xl font-extrabold font-montSerrat md:w-[80%] md:-mt-28">
           Product, defined by it’s customer
         </h1>
         <p className="font-inter text-2xl md:w-2/3 md:py-5">
