@@ -7,7 +7,9 @@ interface IButton {
 
 function Button({ className, children }: IButton) {
   return (
-    <button className={`font-inter text-secondary rounded-full ${className}`}>
+    <button
+      className={`font-inter text-secondary-100 rounded-full ${className}`}
+    >
       {children}
     </button>
   );

@@ -12,7 +12,10 @@ export default {
           100: "#9616C3",
           200: "#EE0BD7",
         },
-        secondary: "#fff",
+        secondary: {
+          100: "#fff",
+          200: "#ffffff1a",
+        },
       },
       screens: {
         sm: "600px",
