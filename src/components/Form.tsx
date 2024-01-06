@@ -1,4 +1,17 @@
+import { useState } from "react";
+
 function Form() {
+  const [input, setInput] = useState<string>("");
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    if (input.length > 1) {
+      alert(`Hi visitor, your email id ${input} is submitted successfully.`);
+    } else {
+      alert("Please enter your email id");
+    }
+    setInput("");
+  }
+
   return (
     <div className="md:h-[600px] border-8 border-primary-100 bg-secondary-200 md:w-[80%]  mx-2 md:mx-auto  relative rounded-[40px] px-4 md:px-16 flex flex-col md:flex-row justify-center items-center gap-10 xxl:gap-[500px]">
       <div className="py-10 md:py-28 text-left">
@@ -10,11 +23,18 @@ function Form() {
           partner with project of class,continue to drive the future evolution
           of blockchaining games.
         </p>
-        <form className="border-2 border-primary-100 relative py-2 rounded-full font-inter">
+        <form
+          className="border-2 border-primary-100 relative py-2 rounded-full font-inter bg-secondary-200"
+          onSubmit={handleSubmit}
+        >
           <input
             type="text"
             placeholder="Your email here"
-            className="outline-none md:w-96 md:text-2xl border-none bg-transparent py-4 pl-10 md:placeholder:text-3xl"
+            className="outline-none md:w-96 md:text-2xl border-none bg-transparent py-4 pl-10 md:placeholder:text-3xl placeholder:text-secondary-100"
+            value={input}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+              setInput(e.target.value)
+            }
           />
           <button
             type="submit"
@@ -24,6 +44,7 @@ function Form() {
           </button>
         </form>
       </div>
+      <div className="hidden md:block md:w-[480px] md:h-[420px] rounded-full bg-primary-100 blur-3xl border-2 opacity-30 absolute -top-40 -right-28 "></div>
       <div className="md:w-full">
         <img
           src={"join.png"}

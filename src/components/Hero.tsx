@@ -19,20 +19,20 @@ function Banner() {
 
           <Navbar />
         </div>
-        <div className="">
+        <div>
           <header className="text-secondary-100 w-full md:w-[70%] text-start">
-            <p className="text-center md:text-left text-secondary-100 text-2xl md:text-8xl font-montSerrat font-bold mb-3">
+            <p className="text-center md:text-left text-secondary-100 text-xl md:text-8xl font-montSerrat font-bold mb-3">
               Kickstart your web3 game
             </p>
-            <p className="px-10 md:px-0 text-center md:text-left font-inter font-light md:text-2xl md:w-[80%] mb-14">
+            <p className="px-1 md:px-0 text-center md:text-left font-inter font-light md:text-2xl md:w-[80%] mb-14">
               unix gaming provides what all games need to succed: gamers,
               technology & funding{" "}
             </p>
-            <Button className="mx-5 md:mx-0 px-10 py-5 bg-gradient-to-r from-[#F20493] to-primary-100 font-inter text-3xl">
+            <Button className="mx-7 md:mx-0 px-10 py-5 bg-gradient-to-r from-[#F20493] to-primary-100 font-inter text-xl md:text-3xl">
               Kickstart my game
             </Button>
           </header>
-          <div className="absolute md:right-0 md:bottom-0">
+          <div className="absolute right-1 md:right-0 bottom-0">
             <img
               src={"girl.png"}
               alt="girl using vr"
@@ -41,9 +41,7 @@ function Banner() {
           </div>
         </div>
       </div>
-
       <Cards />
-
       <Ecosystem />
     </>
   );

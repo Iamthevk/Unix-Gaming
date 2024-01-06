@@ -3,7 +3,7 @@ import Banner from "./components/Hero";
 function App() {
   return (
     <>
-      <div>
+      <div className="min-h-dvh w-dvw">
         <Banner />
       </div>
     </>

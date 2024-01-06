@@ -8,7 +8,7 @@ function SocialIcon({ src, alt }: ISocialProps) {
     <img
       src={src}
       alt={alt}
-      className="border rounded-md border-primary-200 p-3 "
+      className="border rounded-md border-primary-100 p-2 md:p-3 bg-secondary-200"
     />
   );
 }

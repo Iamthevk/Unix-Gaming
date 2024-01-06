@@ -33,7 +33,7 @@ function Ecosystem() {
     setOpenIndex((prevIdx) => (prevIdx === index ? null : index));
   }
   return (
-    <div className="bg-[#0B0A0A] text-secondary-100 pt-20 h-auto relative">
+    <div className="bg-[#0B0A0A] opacity-95 text-secondary-100 pt-20 h-auto relative">
       <div className="text-center">
         <h1 className="text-secondary-100 text-3xl md:text-6xl font-extrabold font-montSerrat mb-5">
           The unix ecosystem
@@ -46,21 +46,21 @@ function Ecosystem() {
       </div>
       <div className="flex flex-col md:flex-row md:justify-between items-center md:px-20 xxl:px-80">
         <div className="relative">
-          <div className="md:w-[430px] h-[300px] rounded-full bg-primary-100 blur-3xl border-2 opacity-50 absolute top-[400px] left-40 "></div>
+          <div className="md:w-[500px] h-[300px] rounded-full bg-primary-100 blur-[100px] border-2 opacity-60 absolute top-[400px] left-32 "></div>
 
           <img
             src={"man.png"}
             className="md:w-[700px] md:h-[700px] object-cover rounded-full backdrop-brightness-100 "
           />
         </div>
-        <div className="w-full ml-10 md:ml-0 md:w-[50%]">
+        <div className="w-full pl-10 md:ml-0 md:w-[50%]">
           {data.map((item, i) => {
             return (
               <>
                 <div
                   className={`flex font-inter text-3xl w-[70%] gap-8  p-5 mb-2 rounded-md cursor-pointer ${
                     openIndex === i
-                      ? "border-l-[12px] border-l-primary-200 border-2 border-primary-100"
+                      ? "border-l-[12px] border-l-primary-200 border-2 border-primary-100 mt-5"
                       : ""
                   }`}
                   onClick={() => handleToggle(i)}
