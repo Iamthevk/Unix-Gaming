@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "../ui_components/Button";
 
 function Form() {
   const [input, setInput] = useState<string>("");
@@ -13,7 +14,7 @@ function Form() {
   }
 
   return (
-    <div className="md:h-[600px] border-8 border-primary-100 bg-secondary-200 md:w-[80%]  mx-2 md:mx-auto  relative rounded-[40px] px-4 md:px-16 flex flex-col md:flex-row justify-center items-center gap-10 xxl:gap-[500px]">
+    <div className="md:h-[600px] border-8 border-primary-100 bg-secondary-200 md:w-[80%]  mx-2 md:mx-auto  relative rounded-[40px] px-4 md:px-16 flex flex-col md:flex-row justify-center items-center gap-10 xxl:gap-[500px] animate__animated animate__fadeIn">
       <div className="py-10 md:py-28 text-left">
         <h1 className="text-secondary-100 text-4xl md:text-6xl font-extrabold font-montSerrat ">
           Get unix gaming updates.
@@ -36,12 +37,9 @@ function Form() {
               setInput(e.target.value)
             }
           />
-          <button
-            type="submit"
-            className="border-2 md:text-3xl border-primary-100 rounded-full absolute right-0 h-full bottom-0 px-8 md:px-12"
-          >
+          <Button className="border-2 md:text-3xl border-primary-100 rounded-full absolute right-0 h-full bottom-0 px-8 md:px-12">
             Submit
-          </button>
+          </Button>
         </form>
       </div>
       <div className="hidden md:block md:w-[480px] md:h-[420px] rounded-full bg-primary-100 blur-3xl border-2 opacity-30 absolute -top-40 -right-28 "></div>

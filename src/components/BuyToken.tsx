@@ -21,11 +21,11 @@ function BuyToken() {
         </Button>
       </div>
       <div className="hidden md:block md:w-[500px] md:h-[500px] rounded-full bg-primary-100 blur-[100px] border-2 opacity-40 absolute top-[350px] left-0 "></div>
-      <div className="hidden md:block md:w-[500px] md:h-[500px] rounded-full bg-primary-100 blur-[100px] border-2 opacity-40 absolute top-[100px] -right-20 "></div>
+      <div className="hidden md:block md:w-[500px] md:h-[500px] rounded-full bg-primary-100 blur-[100px] border-2 opacity-40 absolute top-[100px] right-0 "></div>
       <div>
         <img
           src={"bond.png"}
-          className="md:w-full md:h-[480px] overflow-visible object-cover rounded-full backdrop-brightness-100 "
+          className="md:w-full md:h-[480px] overflow-visible object-cover rounded-full backdrop-brightness-100 animate__animated animate__pulse"
         />
       </div>
     </div>

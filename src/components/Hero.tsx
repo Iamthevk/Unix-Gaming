@@ -7,7 +7,7 @@ function Banner() {
   return (
     <>
       <div className="banner-bg h-[840px] md:w-full pt-12 px-8 md:px-36 relative">
-        <div className="flex justify-between items-start mb-24">
+        <div className="flex justify-between items-start mb-24 animate__animated animate__backInDown">
           <div className="flex gap-2 items-center">
             <span className="h-12 w-12 text-secondary-100 bg-gradient-to-r from-[#F20493] to-primary-100 text-2xl font-bold rounded-full grid place-items-center">
               U
@@ -20,7 +20,7 @@ function Banner() {
           <Navbar />
         </div>
         <div>
-          <header className="text-secondary-100 w-full md:w-[70%] text-start">
+          <header className="text-secondary-100 w-full md:w-[70%] text-start animate__animated animate__zoomIn">
             <p className="text-center md:text-left text-secondary-100 text-xl md:text-8xl font-montSerrat font-bold mb-3">
               Kickstart your web3 game
             </p>
@@ -36,7 +36,7 @@ function Banner() {
             <img
               src={"girl.png"}
               alt="girl using vr"
-              className="md:w-[580px] md:h-[580px] "
+              className="md:w-[580px] md:h-[580px] animate__animated animate__fadeInUp"
             />
           </div>
         </div>

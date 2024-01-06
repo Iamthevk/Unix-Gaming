@@ -1,4 +1,5 @@
 import Banner from "./components/Hero";
+import "animate.css";
 
 function App() {
   return (

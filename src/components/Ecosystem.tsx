@@ -50,7 +50,7 @@ function Ecosystem() {
 
           <img
             src={"man.png"}
-            className="md:w-[700px] md:h-[700px] object-cover rounded-full backdrop-brightness-100 "
+            className="md:w-[700px] md:h-[700px] object-cover rounded-full backdrop-brightness-100 animate__animated animate__pulse"
           />
         </div>
         <div className="w-full pl-10 md:ml-0 md:w-[50%]">
