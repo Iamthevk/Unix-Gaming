@@ -1,8 +1,12 @@
 import { useState } from "react";
 import Button from "../ui_components/Button";
+import { useInView } from "react-intersection-observer";
 
 function Form() {
   const [input, setInput] = useState<string>("");
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     if (input.length > 1) {
@@ -14,7 +18,12 @@ function Form() {
   }
 
   return (
-    <div className="md:h-[600px] border-8 border-primary-100 bg-secondary-200 md:w-[80%]  mx-2 md:mx-auto  relative rounded-[40px] px-4 md:px-16 flex flex-col md:flex-row justify-center items-center gap-10 xxl:gap-[500px] animate__animated animate__fadeIn">
+    <div
+      className={`md:h-[600px] border-8 border-primary-100 bg-secondary-200 md:w-[80%]  mx-2 md:mx-auto  relative rounded-[40px] px-4 md:px-16 flex flex-col md:flex-row justify-center items-center gap-10 xxl:gap-[500px] ${
+        inView ? "animate__animated animate__fadeIn" : ""
+      }`}
+      ref={ref}
+    >
       <div className="py-10 md:py-28 text-left">
         <h1 className="text-secondary-100 text-4xl md:text-6xl font-extrabold font-montSerrat ">
           Get unix gaming updates.

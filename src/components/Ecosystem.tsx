@@ -83,7 +83,7 @@ function Ecosystem() {
 
                 {openIndex === i && (
                   <>
-                    <p className="w-[85%] font-inter text-2xl mb-5">
+                    <p className="w-[85%] font-inter text-2xl mb-5 animate__animated animate__animated animate__fadeInDown">
                       {item.text}
                     </p>
                   </>

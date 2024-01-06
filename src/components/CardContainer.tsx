@@ -1,3 +1,5 @@
+import { useInView } from "react-intersection-observer";
+
 type Data = {
   id: number;
   title: string;
@@ -12,14 +14,22 @@ const data: Data = [
   { id: 1, title: "Marketing", image: "card04.png", count: "11.2K" },
 ];
 function Cards() {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
   return (
-    <div className="category-bg h-full md:h-[400px] grid place-items-center pb-8">
+    <div
+      className={`category-bg h-full md:h-[400px] grid place-items-center pb-8 ${
+        inView ? "animate__animated animate__pulse" : ""
+      }`}
+    >
       <div className="flex flex-col mt-10 md:mt-0  md:flex-row  gap-16 text-secondary-100 xxl:gap-36">
         {data.map((item) => {
           return (
             <div
               key={item.id}
-              className="border-2 border-[#F204DA] bg-secondary-200 w-40 h-40 md:w-60 md:h-60 rounded-[20px] flex justify-center items-center flex-col relative animate__animated animate__pulse"
+              ref={ref}
+              className={`border-2 border-[#F204DA] bg-secondary-200 w-40 h-40 md:w-60 md:h-60 rounded-[20px] flex justify-center items-center flex-col relative`}
             >
               <div className="absolute right-10 top-4 md:top-5 bg-gradient-to-r from-[#F204DA] to-primary-100 rounded-md w-16 text-center">
                 {item.count}
