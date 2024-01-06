@@ -58,7 +58,7 @@ function Ecosystem() {
             return (
               <>
                 <div
-                  className={`flex font-inter text-3xl w-[84%] md:w-[70%] gap-8  p-5 mb-2 rounded-md cursor-pointer ${
+                  className={`flex font-inter text-3xl w-[84%] md:w-[72%] gap-8  p-5 mb-2 rounded-md cursor-pointer ${
                     openIndex === i
                       ? "border-l-[12px] border-l-primary-200 border-2 border-primary-100 mt-5"
                       : ""

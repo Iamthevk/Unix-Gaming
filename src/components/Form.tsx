@@ -28,7 +28,7 @@ function Form() {
         <h1 className="text-secondary-100 text-4xl md:text-6xl font-extrabold font-montSerrat ">
           Get unix gaming updates.
         </h1>
-        <p className="font-inter md:text-2xl py-12 mb-5 md:mb-0">
+        <p className="font-inter md:text-2xl pt-5 pb-10 mb-5 md:mb-0">
           when it comes to partnering new blockchain games, we only want to
           partner with project of class,continue to drive the future evolution
           of blockchaining games.

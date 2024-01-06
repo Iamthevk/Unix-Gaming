@@ -9,9 +9,9 @@ type Data = {
 
 const data: Data = [
   { id: 1, title: "Artwork", image: "card01.png", count: "11.2K" },
-  { id: 1, title: "Designs", image: "card02.png", count: "11.2K" },
-  { id: 1, title: "Development", image: "card03.png", count: "11.2K" },
-  { id: 1, title: "Marketing", image: "card04.png", count: "11.2K" },
+  { id: 2, title: "Designs", image: "card02.png", count: "11.2K" },
+  { id: 3, title: "Development", image: "card03.png", count: "11.2K" },
+  { id: 4, title: "Marketing", image: "card04.png", count: "11.2K" },
 ];
 function Cards() {
   const [ref, inView] = useInView({
@@ -29,17 +29,23 @@ function Cards() {
             <div
               key={item.id}
               ref={ref}
-              className={`border-2 border-[#F204DA] bg-secondary-200 w-40 h-40 md:w-60 md:h-60 rounded-[20px] flex justify-center items-center flex-col relative`}
+              className={`border-2 border-[#F204DA] bg-secondary-200 w-44 h-44 md:w-60 md:h-60 rounded-[20px] flex justify-center items-center flex-col relative `}
             >
-              <div className="absolute right-10 top-4 md:top-5 bg-gradient-to-r from-[#F204DA] to-primary-100 rounded-md w-16 text-center">
+              <div className="absolute right-10 top-4 md:top-5 bg-gradient-to-r from-[#F204DA] to-primary-100 rounded-md w-20 py-1.5 text-center">
                 {item.count}
               </div>
               <img
                 src={item.image}
                 alt={item.title}
-                className="h-20 w-24 md:h-32 mt-5 md:w-40 md:-my-3"
+                className={`h-20 w-24  mt-5 md:mt-1 ${
+                  item.id === 3 || item.id === 4
+                    ? "md:w-40 md:h-32"
+                    : "md:w-48 md:h-40"
+                }`}
               />
-              <p className="text-xl md:text-3xl">{item.title}</p>
+              <p className="absolute bottom-5 text-xl md:text-3xl">
+                {item.title}
+              </p>
             </div>
           );
         })}
