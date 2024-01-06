@@ -1,18 +1,25 @@
-## Get Started
+# React + Vite + TailwindCSS + Typescript
 
-```bash
-# install dependencies
-npm install
+## Getting Started
 
-# serve with hot reload at localhost:5173
+1. Clone the repository: `git clone https://github.com/Iamthevk/Unix-Gaming.git`
+
+2. Navigate to the project directory: `cd Unix-Gaming`
+
+3. Install dependencies: `yarn or yarn install`
+
+4. Run the development server:
+
 npm run dev
-```
 
-Or use `yarn`
+or
 
-```bash
-yarn install
 yarn dev
-```
 
-Checkout demo at [Demo](https://unix-gaming.vercel.app/)
+Open [http://localhost:5173](http://localhost:5173) with your browser to see the result.
+
+## Live Demo
+
+Check out the live demo of the app deployed on [Vercel](https://vercel.com) at [https://unix-gaming.vercel.app/](https://unix-gaming.vercel.app/).
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
