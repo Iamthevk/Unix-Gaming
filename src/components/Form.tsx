@@ -46,7 +46,7 @@ function Form() {
               setInput(e.target.value)
             }
           />
-          <Button className="border-2 md:text-3xl border-primary-100 rounded-full absolute right-0 h-full bottom-0 px-8 md:px-12">
+          <Button className="border-2 md:text-3xl border-primary-100 rounded-full absolute right-0 h-full bottom-0 px-8 md:px-12 hover:bg-secondary-100 hover:text-primary-100">
             Submit
           </Button>
         </form>
