@@ -11,7 +11,7 @@ function BuyToken() {
           you’re interested in, and we help you find others to share your
           interests.
         </p>
-        <Button className="border-2 border-primary-200 px-5 py-2 mt-5">
+        <Button className="border-2 border-primary-200 px-5 py-2 mt-5 hover:scale-110 transition-all duration-300 ease-in-out">
           <div className="flex gap-2 md:px-7">
             <img src={"cart.svg"} />
             <span className="bg-gradient-to-r  from-primary-200 to-primary-100 md:text-2xl bg-clip-text text-transparent">
@@ -20,7 +20,7 @@ function BuyToken() {
           </div>
         </Button>
       </div>
-      <div className="hidden md:block md:w-[500px] md:h-[500px] rounded-full bg-primary-100 blur-[100px] border-2 opacity-40 absolute top-[350px] left-0 "></div>
+      <div className="hidden md:block md:w-[500px] md:h-[500px] rounded-full bg-primary-100 blur-[100px] border-2 opacity-40 absolute top-[350px] left-0 -z-10"></div>
       <div className="hidden md:block md:w-[500px] md:h-[500px] rounded-full bg-primary-100 blur-[100px] border-2 opacity-40 absolute top-[100px] right-0 "></div>
       <div>
         <img

@@ -40,7 +40,7 @@ function Form() {
           <input
             type="text"
             placeholder="Your email here"
-            className="outline-none md:w-96 md:text-2xl border-none bg-transparent py-4 pl-10 md:placeholder:text-3xl placeholder:text-secondary-100"
+            className="outline-none md:w-96 md:text-2xl border-none bg-transparent py-4 pl-3 md:pl-10 md:placeholder:text-3xl placeholder:text-secondary-100"
             value={input}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
               setInput(e.target.value)

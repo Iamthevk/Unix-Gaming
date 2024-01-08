@@ -29,7 +29,7 @@ function Banner() {
           <Navbar />
         </div>
         <div>
-          <header className="text-secondary-100 w-full md:w-[70%] text-start animate__animated animate__zoomIn">
+          <header className="text-secondary-100 w-full md:w-[70%] text-center md:text-start animate__animated animate__zoomIn">
             <p className="text-center md:text-left text-secondary-100 text-xl md:text-8xl font-montSerrat font-bold mb-3">
               Kickstart your web3 game
             </p>

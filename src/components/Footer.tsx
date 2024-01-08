@@ -3,7 +3,7 @@ import SocialIcon from "../ui_components/SocialIcon";
 function Footer() {
   return (
     <div className="flex flex-col justify-center items-center relative py-28 md:py-64 pb-12">
-      <div className="flex justify-start gap-2 md:w-80">
+      <div className="flex justify-start gap-2 w-36 md:w-80">
         <span className="w-12 h-12 md:h-24 md:w-24 text-secondary-100 bg-gradient-to-r from-[#F20493] to-primary-100 text-2xl md:text-5xl font-bold md:font-extrabold rounded-full grid place-items-center">
           U
         </span>
