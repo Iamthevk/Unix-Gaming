@@ -13,3 +13,22 @@
   background-size: cover;
   background-position: bottom;
 }
+.hideNavItems {
+  display: none;
+}
+.showNavItems {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: -48px;
+  left: -32px;
+  background: black;
+  color: #fff;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 100px;
+  overflow-y: hidden;
+}

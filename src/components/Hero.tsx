@@ -41,7 +41,7 @@ function Banner() {
               Kickstart my game
             </Button>
           </header>
-          <div className="absolute right-1 md:right-0 bottom-0">
+          <div className="right-1 md:right-0 -bottom-[106px] md:bottom-0 md:absolute relative">
             <img
               src={"girl.png"}
               alt="girl using vr"
